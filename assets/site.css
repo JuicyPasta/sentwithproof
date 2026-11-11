@@ -101,3 +101,16 @@ dialog::backdrop { background: rgba(0, 0, 0, 0.5); }
 @media (max-width: 480px) {
   .receipt { font-size: 12px; padding: 12px 12px; }
 }
+
+a.cta {
+  display: inline-block; text-decoration: none;
+  background: var(--accent); color: var(--accent-ink);
+  font-weight: 650; font-size: 18px; padding: 14px 22px; border-radius: 10px;
+}
+a.cta:hover { filter: brightness(1.08); }
+.prose p, .prose li { max-width: 40em; }
+.prose ul { padding-left: 1.2em; }
+.prose li { margin: 6px 0; }
+.prose h1 { font-size: clamp(30px, 5.4vw, 42px); }
+footer a { color: inherit; }
+.more { color: var(--muted); font-size: 15px; margin-top: 14px; }

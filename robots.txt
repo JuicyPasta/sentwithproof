@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sentwithproof.com/sitemap.xml
