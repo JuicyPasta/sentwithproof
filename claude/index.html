@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Send certified mail and faxes from Claude | Sent With Proof</title>
+<meta name="description" content="A connector for Claude and ChatGPT that prints and mails your PDF by USPS Certified Mail, or faxes it, and hands back the tracking number.">
+<link rel="canonical" href="https://sentwithproof.com/claude/">
+<meta property="og:title" content="Send certified mail and faxes from Claude">
+<meta property="og:description" content="Hand your AI assistant a PDF. It mails or faxes it and returns the tracking number.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/config.js"></script>
+</head>
+<body data-variant="claude">
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="../">Sent With <span>Proof</span></a>
+    <span class="tag">Connector for Claude and ChatGPT</span>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Send certified mail from Claude.</h1>
+      <p class="lede">Hand your assistant a PDF. It prints and mails it by USPS Certified Mail, or faxes it, and hands back the tracking number and the receipt.</p>
+      <div class="cta-row">
+        <button class="cta" data-cta="hero_connect" data-price="20">Connect · add $20 balance</button>
+        <span class="cta-note">Pay per piece from a prepaid balance. No subscription.</span>
+      </div>
+      <div class="receipt" aria-label="Example tool result">send_letter  →  <b>ACCEPTED</b>
+service        USPS Certified Mail + electronic return receipt
+pages          3 (your PDF, uploaded from the chat)
+tracking       9407 1118 9876 5432 1098 76   (example)
+mails by       next business day
+charged        $13.95 from balance</div>
+    </div>
+
+    <section>
+      <h2>Built for the way assistants actually work</h2>
+      <ol class="steps">
+        <li><b>Real file upload</b><span>Send the PDF you have in the chat. No hosting it at a public link first.</span></li>
+        <li><b>Prepaid balance</b><span>Your assistant can't type a card number, and shouldn't. Top up once; each send draws from the balance, with a spending cap you set.</span></li>
+        <li><b>Preview, then approve</b><span>Every send shows a proof, the address and the price first. Nothing prints until you say yes.</span></li>
+        <li><b>Proof comes back to the chat</b><span>Tracking number, fax confirmation and the return receipt when it's signed, ready to file.</span></li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Price</h2>
+      <table class="price">
+        <tr><td>First-Class letter, up to 5 pages</td><td>$2.50</td></tr>
+        <tr><td>USPS Certified Mail with electronic return receipt</td><td>$13.95</td></tr>
+        <tr><td>Fax, sent or received</td><td>$0.25 / page</td></tr>
+        <tr><td>Monthly fee</td><td>$0</td></tr>
+      </table>
+      <div class="cta-row" style="margin-top:18px">
+        <button class="cta" data-cta="price_connect" data-price="20">Connect · add $20 balance</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Questions</h2>
+      <details>
+        <summary>Which assistants does it work with?</summary>
+        <p>Any client that supports remote MCP connectors, including Claude, Claude Code and ChatGPT.</p>
+      </details>
+      <details>
+        <summary>What do people send?</summary>
+        <p>Landlord notices, demand letters, billing disputes, cancellation letters, records requests, and anything else where you need to show it was sent and received.</p>
+      </details>
+      <details>
+        <summary>Can my assistant send without asking me?</summary>
+        <p>Not by default. Each send needs your approval unless you set a rule that allows it, and a monthly cap limits the total either way.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    Sent With Proof is a document delivery service. It is not affiliated with Anthropic, OpenAI or the U.S. Postal Service.
+  </footer>
+</div>
+
+<dialog id="waitlist" aria-labelledby="wl-title">
+  <div class="dlg">
+    <form id="waitlist-form" novalidate>
+      <h3 id="wl-title">The connector is in private beta</h3>
+      <p>We aren't taking payment yet. Leave your email and we'll send the connector URL with $5 of starting balance.</p>
+      <label for="wl-email">Email</label>
+      <input id="wl-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+      <input class="hp" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div class="row">
+        <button class="cta" type="submit">Send my invite</button>
+        <button class="ghost" type="button" data-close>Not now</button>
+      </div>
+      <p class="fine">You have not been charged. We'll only email you about this service.</p>
+    </form>
+    <div id="waitlist-done" hidden>
+      <h3>You're on the list</h3>
+      <p>We'll email the connector URL as soon as a spot opens. Nothing has been charged.</p>
+      <div class="row"><button class="ghost" type="button" data-close>Close</button></div>
+    </div>
+  </div>
+</dialog>
+<script src="../assets/site.js"></script>
+</body>
+</html>
